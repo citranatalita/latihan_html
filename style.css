@@ -1,0 +1,306 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /*agar perpindahanya smooth*/
+    scroll-behavior: smooth;
+}
+
+
+
+header nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: #1D1874;
+    justify-content: space-evenly;
+}
+/*membuat efek ketika di sorot menu nya */
+
+header nav ul ::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .5s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+/* mengatur logo nya */
+
+.logo {
+    width: 150px;
+}
+
+/* mengatur panjang ul nya */
+ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 150px;
+    list-style: none;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* css jumbotron */
+
+.jumbotron {
+    position: relative;
+    /* memasukkan gambarnya */
+    background-image: url("https://th.bing.com/th?id=OIP.XDGJkEpaWD1IU05WaaRxLgHaE8&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.5&pid=3.1&rm=2");
+    height: 600px;
+    /* untuk agar bacground nya diam / fixed */
+    background-attachment: fixed;
+
+}
+
+.jumbotron h1, 
+h4 {
+    text-align: center;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+
+}
+
+.jumbotron h4 {
+    font-size: 20px;
+}
+
+/* tombol nya */
+
+.jumbotron a {
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 10px  20px;
+    text-decoration: none;
+    transition: .3;
+}
+
+/* hover ketika cursor di atas objek nya */
+
+.jumbotron a:hover {
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+}
+
+/* atur gambar gelombannya */
+
+.gelombang {
+    margin-top: 180px;
+}
+
+
+.penjelasan {
+    margin-top: 20px
+}
+
+.penjelasan .garis {
+    width: 100px;
+    height: 2px;
+    background: rgb(78, 78, 78) ;
+    margin: auto;
+}
+
+.penjelasanya p {
+    padding: 40px;
+    text-align-last: center;
+}
+
+.jumbo-kotak {
+    display: flex;
+    width: 76%;
+    height: 550px;
+    margin: 20px auto;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.jumbo-kotak h3 {
+margin-top: 30px;
+text-align: center;
+font-weight: 400;
+}
+
+.jumbo-kotak a {
+    padding: 10px 20px;
+    background-color: #2b50b4;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.jumbo-kotak a:hover{
+    background-color: #0030b3;
+    transition: .3s;
+}
+
+.gambar {
+    overflow: hidden;
+}
+
+.kotak {
+    position: relative;
+  
+}
+
+.kotak img:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+.destinasi {
+    font-weight: 500;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.garis-destinasi {
+    width: 100px;
+    margin: auto;
+    height: 2px;
+    background-color: rgb(78, 78, 78);
+}
+
+.kotak .konten1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    ba
+}
+
+.kotak .konten1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 350px;
+    bacground: #2b50b4;
+    /*kita sembunyakan*/
+     /*transform: translateY(-350px);*/
+      /*untuk menyembunyikan kita perlu opcity*/
+       /*opcity: 0; */
+     transition: 1s;
+
+
+}
+
+
+.kotak .konten1 p {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+
+/* di sini kita akan memanggil kelas muncul menggunakan javascript agar halaman yang yg biru tadi muncul */
+
+
+
+.kotak .konten1.muncul1 {
+/* posisi nya kita reset jadi posisi awal*/
+    transform: translateY(0);
+    /* opacity nya kita jadikan 1 */
+    opacity: 1;
+    transition: 1s;
+}
+
+/* lalu copas saja untuk konten 2 sampai 3 */
+
+.kotak .konten2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 350px;
+    bacground: #2b50b4;
+    /*kita sembunyakan*/
+     /*transform: translateY(-350px);*/
+      /*untuk menyembunyikan kita perlu opcity*/
+       /*opcity: 0; */
+       transition: 1s;
+
+
+}
+
+
+.kotak .konten2 p {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* di sini kita akan memanggil kelas muncul menggunakan javascript agar halaman yang yg biru tadi muncul */
+
+.kotak .konten3.muncul3 {
+/* posisi nya kita reset jadi posisi awal*/
+    transform: translateY(0);
+    /* opacity nya kita jadikan 1 */
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+
+
+
+/*konten3*/
+
+.kotak .konten3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 350px;
+    bacground: #2b50b4;
+    /*kita sembunyakan*/
+     /*transform: translateY(-350px);*/
+      /*untuk menyembunyikan kita perlu opcity*/
+       /*opcity: 0; */
+       transition: 1s;
+}
+
+
+
+
+.kotak .konten3 p {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* di sini kita akan memanggil kelas muncul menggunakan javascript agar halaman yang yg biru tadi muncul */
+
+.kotak .konten3.muncul3 {
+/* posisi nya kita reset jadi posisi awal*/
+    transform: translateY(0);
+    /* opacity nya kita jadikan 1 */
+    opacity: 1;
+    transition: 1s;
+}
+
+.kotak h3 {
+    color: #ffffff;
+    font-weight:bold;
+
+}
